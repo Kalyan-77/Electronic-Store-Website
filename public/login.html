@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="open">
+        <div class="valid" id="Login">
+            <div class="log">
+            <h2>Login</h2>
+            <p>Doesn't Have an Account?<a href="#" onclick="showRegister()">signup</a></p>
+            </div>
+            <form id="login-form" action="/login" method="POST">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p id="error-msg" style="color: red;"></p> <!-- Error message will be displayed here -->
+            </form>
+              
+        </div>
+        </div>
+    </form>
+
+
+
+        <div class="valid1" id="Register">
+            <div class="log">
+                <h2>signup</h2>
+                <p>Already Have an Account?<a href="#" onclick="showLogin()">Login</a></p>
+                </div>
+            <form id="signup-form" action="/sign_up" method="POST">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phno">Phone Number:</label>
+                    <input type="tel" id="phno" name="phno" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="passwordr" required>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const error = params.get('error');
+
+        if (error) {
+            document.getElementById('error-msg').textContent = error;
+        }
+
+
+setTimeout(function() {
+    document.querySelector('.preloader').style.display = 'none';
+    document.querySelector('.loginform').style.display = 'flex';
+  }, 2000);
+function showRegister() {
+    document.getElementById("Login").style.display = "none";
+    document.getElementById("Register").style.display = "flex";
+}
+
+function showLogin() {
+    document.getElementById("Register").style.display = "none";
+    document.getElementById("Login").style.display = "flex";
+}
+function over(){
+    document.getElementById('logSub').style.display = "block";
+}
+function out(){
+    document.getElementById('logSub').style.display = "none";
+}
+    </script>
+</body>
+</html>

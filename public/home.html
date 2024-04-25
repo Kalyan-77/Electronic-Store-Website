@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>BootStrap</title>
+</head>
+<body>
+  <div class="spinner-wrapper">
+    <div class="spinner-border text-white" role="status">
+      <span class="sr-only visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+    <nav class="navbar navbar-expand-lg p-2 "> 
+        <!-- position: fixed  -->
+        <div class="container-fluid border p-2  bg-secondary rounded">
+          <!-- shadow-lg p-3 pl-0 mb-3 bg-info rounded -->
+          <a class="navbar-brand" href="#"><i class="bi bi-google-play"></i>Electronic-Store</a>
+          <!-- <img class="rounded " alt="Cinque Terre"src="4d93191e73132d699835167521c5edad-removebg-preview.png" style="width: 7%; height: 70px;"> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"  onclick="home()"><i class="bi bi-house-fill"></i>HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product"><i class="bi bi-handbag-fill"></i>PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"><i class="bi bi-tags-fill"></i></i>CATEGORY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-chat-text-fill"></i></i>REVIEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-buildings-fill"></i>SELLERS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"><i class="bi bi-people-fill"></i>CONTACT</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class=" p-2  search" type="search" placeholder="Search" aria-label="Search" >
+              <i class="bi bi-search fs-4 text-muted"></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div id="body-main" style="display: block;">
+      <div class="sec-nav" >
+        <ul class="iner-nav">
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn  dropdown-toggle border-0" data-bs-toggle="dropdown">
+                Mobile
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Samsumg</a></li>
+                <li><a class="dropdown-item" href="#">Iphone</a></li>
+                <li><a class="dropdown-item" href="#">Nothing Mobiles</a></li>
+                <li><a class="dropdown-item" href="#">Nokia</a></li>
+                <li><a class="dropdown-item" href="#">Vivi</a></li>
+                <li><a class="dropdown-item" href="#">Oppo</a></li>
+                <li><a class="dropdown-item" href="#">Lava</a></li>
+                <li><a class="dropdown-item" href="#">IQOO</a></li>
+                <li><a class="dropdown-item" href="#">Xiami</a></li>
+                <li><a class="dropdown-item" href="#">Realme</a></li>
+                <li><a class="dropdown-item" href="#">Poco</a></li>
+                <li><a class="dropdown-item" href="#">Motorola</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+              Laptop
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">HP</a></li>
+                <li><a class="dropdown-item" href="#">Lenovo</a></li>
+                <li><a class="dropdown-item" href="#">Dell</a></li>
+                <li><a class="dropdown-item" href="#">Acer</a></li>
+                <li><a class="dropdown-item" href="#">Asus</a></li>
+                <li><a class="dropdown-item" href="#">Apple</a></li>
+                <li><a class="dropdown-item" href="#">Infinix</a></li>
+                <li><a class="dropdown-item" href="#">Realme</a></li>
+                <li><a class="dropdown-item" href="#">Microsoft</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                AC
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blue Star</a></li>
+                <li><a class="dropdown-item" href="#">Voltas</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">LG</a></li>
+                <li><a class="dropdown-item" href="#">Haier</a></li>
+                <li><a class="dropdown-item" href="#">Whirlpool</a></li>
+                <li><a class="dropdown-item" href="#">Lloyd</a></li>
+                <li><a class="dropdown-item" href="#">Hitachi</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                Coolers
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Croma</a></li>
+                <li><a class="dropdown-item" href="#">Symphony</a></li>
+                <li><a class="dropdown-item" href="#">Crompton</a></li>
+                <li><a class="dropdown-item" href="#">Bajaj</a></li>
+                <li><a class="dropdown-item" href="#">Voltas</a></li>
+                <li><a class="dropdown-item" href="#">Havells</a></li>
+                <li><a class="dropdown-item" href="#">Usha</a></li>
+                <li><a class="dropdown-item" href="#">Kenstar</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                TV
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">LG</a></li>
+                <li><a class="dropdown-item" href="#">Sony</a></li>
+                <li><a class="dropdown-item" href="#">Panasonic</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">TCL</a></li>
+                <li><a class="dropdown-item" href="#">Toshiba</a></li>
+                <li><a class="dropdown-item" href="#">Xiaomi</a></li>
+                <li><a class="dropdown-item" href="#">OnePlus</a></li>
+                <li><a class="dropdown-item" href="#">Hisense</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                Fridges
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">Whirlpool </a></li>
+                <li><a class="dropdown-item" href="#">LG</a></li>
+                <li><a class="dropdown-item" href="#">Bosch</a></li>
+                <li><a class="dropdown-item" href="#">Electrolux</a></li>
+                <li><a class="dropdown-item" href="#">Panasonic</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                Watches
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Omega</a></li>
+                <li><a class="dropdown-item" href="#">Rolex</a></li>
+                <li><a class="dropdown-item" href="#">Audemars Piguet</a></li>
+                <li><a class="dropdown-item" href="#">Jaeger-LeCoultre</a></li>
+                <li><a class="dropdown-item" href="#">Breitling</a></li>
+                <li><a class="dropdown-item" href="#">Hamilton</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                Washing-Machine
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">LG</a></li>
+                <li><a class="dropdown-item" href="#">Samsung</a></li>
+                <li><a class="dropdown-item" href="#">Whirlpool</a></li>
+                <li><a class="dropdown-item" href="#">Haier</a></li>
+                <li><a class="dropdown-item" href="#">IFB</a></li>
+                <li><a class="dropdown-item" href="#">Electrolux</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-items">
+            <div class="icon-cart">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+              </svg>
+              <span>0</span>
+          </div>
+            
+          </li>
+        </ul>
+        <!-- <div class="icon-cart">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+          </svg>
+          <span>0</span>
+      </div> -->
+      </div>
+      <div id="hero-carousel" class="carousel slide p-2" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="https://image.made-in-china.com/44f3j00ugAhYOFRnmpr/Side-by-Side-Sale-Electronic-Full-Size-House-Fridge-Refrigerator.webp" class="d-block w-100 c-img" alt="Slide 1">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="mt-5 fs-3 text-uppercase">Discover the cool world</p>
+              <h1 class="display-1 fw-bolder text-capitalize">The Refrigerators</h1>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202307/untitled_design_-_2023-07-05t144415-sixteen_nine_0.jpg?size=948:533" class="d-block w-100 c-img" alt="Slide 2">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+              <p class="display-1 fw-bolder text-capitalize">available on different colors</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">shop now</button>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="https://global.hisense.com/dam/jcr:30d194d1-b0fa-449e-bc95-895f42bf7e10/energypro_banner2.jpg" class="d-block w-100 c-img" alt="Slide 3">
+            <div class="carousel-caption top-0 mt-4">
+              <p class="text-uppercase fs-3 mt-5">The season has arrived</p>
+              <p class="display-1 fw-bolder text-capitalize">Cool your rooms</p>
+              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">shop now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="modal fade" tabindex="-1" role="dialog" id="booking-modal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">New Products</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Choose the new Products for better comfort</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1 class="container border-bottom border-warning border-2">PRODUCTS</h1>
+    <div class="container1">
+      <div class="listProduct">
+        <!-- all productes goes hear -->
+      </div>
+  </div>
+  <div class="cartTab">
+      <h1>Shopping Cart</h1>
+      <div class="listCart">
+          
+      </div>
+      <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut" onclick="window.location.href = 'adress.html'">Check Out</button>
+
+      </div>
+  </div>
+<!----Category-->
+      <h1 class="container border-bottom border-warning border-2">CATEGORY</h1>
+      <div class="container-fluid one" id="service ">
+        <div class="card1">
+          <img src="https://sprig.store/cdn/shop/files/Oneplus-12.png?v=1710125101" alt="Image 1">
+          <h2>MOBILES</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://imgeng.jagran.com/images/2024/jan/Top%20Selling%20Laptops%20For%2020241704787845062.jpg" alt="Image 1">
+          <h2>LAPTOPS</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://i0.wp.com/www.coolingindia.in/wp-content/uploads/2023/09/ac-market.jpg?resize=696%2C538&ssl=1" alt="Image 1">
+          <h2>AC'S</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-hq/2019/img/Kitchen/XCM_Manual_1164477_hotw_fan_cooler_420x420_Kitchen_XCM_Manual_1164477_in_kitchen_hotw_fan_cooler_19_420x420_4_1554790145_jpg.jpg" alt="Image 1">
+          <h2>COOLERS</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://images.naptol.com/usr/local/csp/staticContent/product_images/horizontal/750x750/Smart-Watch-with-2-Days-Battery-Backup-SW-ID116-1.jpg" alt="Image 1">
+          <h2>Watches</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://www.shutterstock.com/image-photo/interior-home-laundry-room-modern-260nw-1544449238.jpg" alt="Image 1">
+          <h2>W-machine</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+        <div class="card1">
+          <img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwec79bc36/images/Fastrack/Catalog/FT4WTB01_1.jpg?sw=800&sh=800" alt="Image 1">
+          <h2>EarPhones</h2>
+          <button class="btn btn-warning">Open</button>
+        </div>
+      </div>
+
+
+
+      <!---Reviews-->
+      <h1 class="container border-bottom border-warning border-2">REVIEWS</h1>
+       <div class="container-fluid reviewSection">
+        <div class="reviewItem  card ">
+            <div class="card-header">
+                    <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                    <span>Yuvaraj</span>
+                <ul>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                </ul>
+            </div>
+            <article>
+                <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                    voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                    facere exercitationem!</p>
+                    <br>
+                    <h5>Jan 01, 202</h5>
+            </article>
+        </div>
+        <div class=" card reviewItem">
+          <div class="card-header">
+                  <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                  <span>Yash</span>
+              <ul>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-solid fa-star"></i></li>
+                  <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+          </div>
+          <article>
+              <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                  voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                  facere exercitationem!</p>
+                  <br>
+                  <h5>Apr 20, 2024</h5>
+          </article>
+       </div>
+      <div class=" card reviewItem">
+        <div class="card-header">
+                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+                <span>Amal</span>
+            <ul>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+            </ul>
+        </div>
+        <article>
+            <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+                voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+                facere exercitationem!</p>
+                <br>
+            <h5>Mar 19, 2024</h5>
+        </article>
+    </div>
+    <div class=" card reviewItem">
+      <div class="card-header">
+              <img src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+              <span>Ravi</span>
+          <ul>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-solid fa-star"></i></li>
+              <li><i class="fa-regular fa-star"></i></li>
+          </ul>
+      </div>
+      <article>
+          <p class="review">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit beatae ipsa
+              voluptatibus perferendis quos eaque nemo error tempora harum quas, laudantium tenetur, neque,
+              facere exercitationem!</p>
+              <br>
+              <h5>Dec 23, 2023</h5>
+      </article>
+    </div>
+  </div>
+
+
+
+<!---footer-->
+<footer class=" container-fluid text-center text-lg-start bg-info ">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <div>
+      <a href="#" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </section>
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 All Copyright are Reserved
+  </div>
+</footer>
+</div>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+<div class="detils" id="detils">
+  <div class="detilsnew" id="detilsnew">
+  <!-- <input type="button" value="Home" onclick="home()">
+  <h1>Title: ihonex</h1><br>
+    <img src="image/1.png" alt="" srcset=""></br>
+    <div class="inner">
+    <label>Description</label>
+    <p>The iPhone is a series of smartphones made by Apple Inc since 2007. 
+      It is a mobile phone, meaning that it makes calls and sends text messages without wires.
+      There are many types of iPhones. The iPhone can access the Internet as well, either using a cellular network or over Wi-Fi."</p>
+    <div>
+      <p> price:$200</p>
+      <p> discounr:57%</p>
+    </div>
+    
+    <button onclick="{ window.location.href = 'adress.html';}">BUY</button><br>
+    <button class="addCart">Add To Cart</button>
+  </div> -->
+  </div>
+    <div class="detilssecound" id="detilssecound">
+    </div>
+
+</div>
+     
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/ironman.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+}
+.popup{
+    position: absolute;
+    display: none;
+    /* background-color: aqua; */
+    width: 15%;
+    top: 53%;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; 
+    color: wheat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.open{
+    overflow: hidden;
+}
+ section
+{
+    height: 100vh;
+    background: #000;
+    /* overflow: none; */
+}
+video
+{
+    object-fit: cover;
+}
+#wel{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: .3em;
+    overflow: none;
+}
+#wel span
+{
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+    -webkit-animation: animate 1s linear forwards;
+    box-shadow: 0 10 0px 0px;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+}
+    100%
+{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0px);
+
+}
+}
+
+#wel span:nth-child(1)
+{
+    animation-delay: 0s;
+}
+#wel span:nth-child(2)
+{
+    animation-delay: 0.2s;
+}
+#wel span:nth-child(3)
+{
+    animation-delay: 0.3s;
+}
+#wel span:nth-child(4)
+{
+    animation-delay: 0.4s;
+}
+#wel span:nth-child(5)
+{
+    animation-delay: 0.5S;
+}
+#wel span:nth-child(6)
+{
+    animation-delay: 0.6s;
+}
+#wel span:nth-child(7)
+{
+    animation-delay: 0.7s;
+} 
+
+#Login{
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid;
+    background-color: rgba(248, 243, 243, 0.5);
+    margin: 100px auto;
+    box-shadow: 0px 0px 20px rebeccapurple;
+    display: flex;
+    flex-direction: column;  
+    margin-left: 10%;
+
+}
+#Register{
+    width: 25%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid;
+    background-color: rgba(248, 243, 243, 0.5);
+    margin: 100px auto;
+    box-shadow: 0px 0px 20px red;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    margin-left: 10%;
+}
+h1{
+    text-align: center;
+}
+label {
+    display: block;
+    position: relative;
+    left: 3%;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"]
+{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 2%;
+    
+}
+
+#btn, button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 2%;
+    background-color:rgb(145, 23, 145);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    left: 3%;
+    font-size: 14px;
+}
+#btn:hover,button:hover {
+    background-color: rgb(188, 29, 188);
+}
+span {
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+a {
+    color: rgb(145, 23, 145);;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#social {
+    display: flex;
+    padding-right: 10px;
+    
+}
+
+#social button {
+    margin-right: 10px;
+    background-color: white;
+    position: relative;
+    color: black;
+    border: 1px solid;
+    font-size: 14px;
+}
+
+#social img {
+    width: 20%;
+    height: 25px; 
+}
+#social #facebook{
+    color: blue;
+    cursor:not-allowed;
+    
+}
+#social #Google{
+    color: red;
+    cursor:not-allowed;
+}
+/* CSS styles */
+.error {
+    color: red;
+    margin-top: -10px; 
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+
+/* Other styles remain the same */
+@media only screen and (max-width: 600px){
+    body {
+        background-size: auto 100%;
+    }
+    #wel{
+        font-size: 2em;
+    }
+    #Login{
+        width: 65%;
+        height: auto;
+    }
+    #Register{
+        width: 65%;
+        height: auto;
+    }
+}

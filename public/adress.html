@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="adress.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512–16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>Checkout Page</h1>
+    <form action="/submit" method="post" id="checkoutForm">
+        <h2>Address Information</h2>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode" required><br><br>
+
+        <h2>Payment Information</h2>
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">Select Payment Method</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="upi">UPI</option>
+        </select><br><br>
+
+        <div id="cardDetails" style="display:none;">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber"><br><br>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate"><br><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv"><br><br>
+        </div>
+
+        <div id="upiOptions" style="display:none;">
+            <label for="upiProvider">Select UPI Provider:</label>
+            <select id="upiProvider" name="upiProvider">
+                <option value="">Select UPI Provider</option>
+                <option value="paytm">Paytm</option>
+                <option value="phonepe">PhonePe</option>
+                <option value="googlepay">Google Pay</option>
+                <option value="amazonpay">Amazon Pay</option>
+            </select><br><br>
+        </div>
+        <div id="upidetails" style="display:none;">
+            <label for="UPIID">UPI ID:</label>
+            <input type="text" id="UPINUMBER" name="cardNumber"><br><br>
+        </div>
+
+        <button class="truck-button" onclick="">
+            <span class="default">Complete Order</span>
+            <span class="success">
+                Order Placed
+                <svg viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                </svg>
+            </span>
+            <div class="truck">
+                <div class="wheel"></div>
+                <div class="back"></div>
+                <div class="front"></div>
+                <div class="box"></div>
+            </div>
+        </button>
+        
+    </form>
+
+    <script>
+        
+        document.getElementById('paymentMethod').addEventListener('change', function() {
+            var cardDetails = document.getElementById('cardDetails');
+            var upiOptions = document.getElementById('upiOptions');
+            var upival = document.getElementById('upidetails');
+            if (this.value === 'card') {
+                cardDetails.style.display = 'block';
+                upiOptions.style.display = 'none';
+            } else if (this.value === 'upi') {
+                cardDetails.style.display = 'none';
+                upiOptions.style.display = 'block';
+                upival.style.display='block';
+            }
+            else {
+                cardDetails.style.display = 'none';
+                upiOptions.style.display = 'none';
+            }
+        });
+        document.querySelectorAll('.truck-button').forEach(button => {
+    button.addEventListener('click', e => {
+
+        e.preventDefault();
+        
+        let box = button.querySelector('.box'),
+            truck = button.querySelector('.truck');
+        
+        if(!button.classList.contains('done')) {
+            
+            if(!button.classList.contains('animation')) {
+
+                button.classList.add('animation');
+
+                gsap.to(button, {
+                    '--box-s': 1,
+                    '--box-o': 1,
+                    duration: .3,
+                    delay: .5
+                });
+
+                gsap.to(box, {
+                    x: 0,
+                    duration: .4,
+                    delay: .7
+                });
+
+                gsap.to(button, {
+                    '--hx': -5,
+                    '--bx': 50,
+                    duration: .18,
+                    delay: .92
+                });
+
+                gsap.to(box, {
+                    y: 0,
+                    duration: .1,
+                    delay: 1.15
+                });
+
+                gsap.set(button, {
+                    '--truck-y': 0,
+                    '--truck-y-n': -26
+                });
+
+                gsap.to(button, {
+                    '--truck-y': 1,
+                    '--truck-y-n': -25,
+                    duration: .2,
+                    delay: 1.25,
+                    onComplete() {
+                        gsap.timeline({
+                            onComplete() {
+                                button.classList.add('done');
+                                button.classList.add('done');
+                                setTimeout(function() {
+                                    window.location.href = 'home.html';
+                                }, 2000);
+                            }
+                        }).to(truck, {
+                            x: 0,
+                            duration: .4
+                        }).to(truck, {
+                            x: 40,
+                            duration: 1
+                        }).to(truck, {
+                            x: 20,
+                            duration: .6
+                        }).to(truck, {
+                            x: 96,
+                            duration: .4
+                        });
+                        gsap.to(button, {
+                            '--progress': 1,
+                            duration: 2.4,
+                            ease: "power2.in"
+                        });
+                    }
+                });
+                
+            }
+            
+        } else {
+            button.classList.remove('animation', 'done');
+            gsap.set(truck, {
+                x: 4
+            });
+            gsap.set(button, {
+                '--progress': 0,
+                '--hx': 0,
+                '--bx': 0,
+                '--box-s': .5,
+                '--box-o': 0,
+                '--truck-y': 0,
+                '--truck-y-n': -26
+            });
+            gsap.set(box, {
+                x: -24,
+                y: -6
+            });
+        }
+
+    });
+});
+    </script>
+    
+</body>
+</html>

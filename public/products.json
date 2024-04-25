@@ -1,0 +1,195 @@
+[
+    {
+        "id": 1,
+        "name": "IPHONE 15",
+        "price": "73,100",
+        "image": "image/1.png",
+        "discount": 15,
+        "description": "The iPhone 15 display has rounded corners that follows a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.54 cm (6.12″) diagonally (actual viewable area is less).The display has rounded corners that follow a curved design and is splash, water, and dust resistant. The iPhone 15 also has a Dynamic Island feature that replaces the notch from the iPhone X"
+    },
+    {
+        "id": 2,
+        "name": "iqoo Z6 Lite",
+        "price": "12,000",
+        "image": "image/2.png",
+        "discount": 75,
+        "description": "The iQOO Z6 Lite 5G is a smartphone with the following features:\nProcessor: Qualcomm Snapdragon 4 Gen 1\nDisplay: 6.58 in (16.71 cm), 120 Hz FHD+ capacitive multi-touch screen with 2408 x 1080 pixels and 20:9 ratio\nBattery: 5000 mAh with 18 W fast charging support\nOperating system: Funtouch OS 12 based on Android 12\nCellular technology: 5G\nRear camera: 50 MP + 2 MP macro\nFront camera: 8 MP\nDimensions: 75.84 mm x 164.00 mm x 8.25 mm\nWeight: 194 g."
+    },
+    {
+        "id": 3,
+        "name": "Samsung Galaxy S24 Ultra 5G",
+        "price": "1,39,999",
+        "image": "image/3.png",
+        "discount": -3,
+        "description": "Capture epic moments with the S24 Ultra's pro-grade camera. Power through tasks with the next-gen processor. Immerse yourself in the expansive display. All-day battery life keeps you going.  #Samsung #GalaxyS24Ultra"
+    },
+    {
+        "id": 4,
+        "name": "NOTHING PHONE 3",
+        "price": "42,000",
+        "image": "image/4.png",
+        "discount": 2,
+        "description": "The Nothing Phone 3 is rumored to be the next mid-range leader from Nothing, building on the success of Phone 1 and Phone 2.  Expected features include a powerful Qualcomm Snapdragon 8s Gen 3 processor, improved camera system, and potentially faster charging or a larger battery. Stay tuned for the official reveal this summer!."
+    },
+    {
+        "id": 5,
+        "name": "IPHONE 13",
+        "price": "52,000",
+        "image": "image/5.png",
+        "discount": 20,
+        "description": "The iPhone 13 delivers a powerful A15 Bionic chip for lightning-fast performance, an improved dual-camera system with Cinematic mode for stunning videos, and a bright, beautiful Super Retina XDR display. It also boasts longer battery life and a durable design.."
+    },
+    {
+        "id": 6,
+        "name": "iqoo Neo7 Pro",
+        "price": "29,999",
+        "image": "image/6.png",
+        "discount": 25,
+        "description": "The iQOO Neo7 Pro is a powerful and feature-packed smartphone designed for gamers and mobile enthusiasts. It boasts a top-of-the-line Qualcomm Snapdragon 8+ Gen 1 processor for smooth performance, a stunning AMOLED display with a 120Hz refresh rate for immersive visuals, and a versatile triple-camera system for capturing high-quality photos and videos."
+    },
+    {
+        "id": 7,
+        "name": "LG WASHING MACHINE",
+        "price": "34,299",
+        "image": "image/7.png",
+        "discount": 45,
+        "description": "LG washing machines are known for their reliability, performance, and innovative features. They offer a variety of capacities, washing cycles, and technologies to meet your specific laundry needs. Some popular features include LG's ThinQ technology for smart connectivity, TurboWash for faster wash times, and LG AI DD for intelligent washing cycles that adjust to the fabric type."
+    },
+    {
+        "id": 8,
+        "name": "LG WASHING MACHINE FULLY AUTOMATED",
+        "price": "42,999",
+        "image": "image/8.png",
+        "discount": 10,
+        "description": "LG offers a wide range of fully automatic washing machines designed for convenience and efficiency. These machines handle the entire washing process, from filling with water to rinsing and spinning, without any manual intervention required. They come in various capacities, washing cycles, and technologies to suit your specific laundry needs. Some popular features include LG ThinQ technology for smart connectivity, TurboWash for faster wash times, and LG AI DD for intelligent washing cycles that adjust to the fabric type."
+    },
+    {
+        "id": 9,
+        "name": "SAMSUNG WASHING MACHINE",
+        "price": "49,000",
+        "image": "image/9.png",
+        "discount": 3,
+        "description": "Samsung offers a wide range of fully automatic washing machines designed for convenience and efficiency. These machines handle the entire washing process, from filling with water to rinsing and spinning, without any manual intervention required. They come in various capacities, washing cycles, and technologies to suit your specific laundry needs. Some popular Samsung washing machine features include EcoBubble™ technology for gentle yet effective cleaning, Digital Inverter Motor for quiet operation and energy efficiency, and SmartThings connectivity for remote monitoring and control."
+    },
+        {
+            "id": 10,
+            "name": "SAMSUNG GALAXY  WATCH 4",
+            "price":"28,599",
+            "image": "image/10.png",
+            "discount": 28,
+            "description": "The Samsung Galaxy Watch 4 is a stylish and feature-packed smartwatch that helps you manage your health and wellness, stay connected, and express your style. It boasts a sleek design with a customizable watch face, advanced health tracking features like blood oxygen monitoring and sleep tracking, and a wide range of apps to keep you informed and entertained."
+        },
+        {
+            "id": 11,
+            "name": "SAMSUNG GALAXY  WATCH 3",
+            "price": "24,999",
+            "image": "image/11.png",
+            "discount": 40,
+            "description": "The Samsung Galaxy Watch 3 is a stylish and feature-packed smartwatch that helps you manage your health and wellness, stay connected, and express your style. It boasts a sleek design with a customizable watch face, advanced health tracking features like blood oxygen monitoring and sleep tracking, and a wide range of apps to keep you informed and entertained."
+        },
+        {
+            "id": 12,
+            "name": "SAMSUNG GALAXY  WATCH 2",
+            "price": "15,999",
+            "image": "image/12.png",
+            "discount": 50,
+            "description": "The Samsung Galaxy Watch 2 is a stylish and feature-packed smartwatch that helps you manage your health and wellness, stay connected, and express your style. It boasts a sleek design with a customizable watch face, advanced health tracking features like blood oxygen monitoring and sleep tracking, and a wide range of apps to keep you informed and entertained."
+        },
+        {
+            "id": 13,
+            "name": "SAMSUNG GALAXY  WATCH ",
+            "price": "50,000",
+            "image": "image/13.png",
+            "discount": 2,
+            "description": "The Samsung Galaxy Watch  is a stylish and feature-packed smartwatch that helps you manage your health and wellness, stay connected, and express your style. It boasts a sleek design with a customizable watch face, advanced health tracking features like blood oxygen monitoring and sleep tracking, and a wide range of apps to keep you informed and entertained."
+        },
+        {
+            "id": 14,
+            "name": "SAMSUNG REFIGRATER WITH DIGITAL INVERTER",
+            "price": "33,999",
+            "image": "image/23.png",
+            "discount": 25,
+            "description": "The Xiaomi Mi TV 4A 32\" is a great choice for budget-minded users who want a smart TV with essential features. It features a 32-inch HD display, a quad-core processor, and runs on the PatchWall UI for a user-friendly experience."
+        },
+        {
+            "id": 15,
+            "name": "LG REFIGRATER WITH AI FEATURES",
+            "price": "53,599",
+            "image": "image/24.png",
+            "discount": 75,
+            "description": "The LG InstaView ThinQ Refrigerator offers a luxurious blend of convenience and innovation. Knock twice on the InstaView panel to see inside without opening the door. LG ThinQ with AI helps maintain optimal temperature, monitor for potential issues, and even connects to smart speakers for voice control. This refrigerator boasts a Smart Cooling System for consistent temperatures and a Craft Ice™ Maker for unique slow-melting ice cubes, perfect for entertaining."
+        },
+        {
+            "id": 16,
+            "name": "SAMSUNG QLED TV",
+            "price": "99,999",
+            "image": "image/16.png",
+            "discount": 30,
+            "description": "The Samsung QN90A Series represents the pinnacle of Samsung's QLED technology. The Neo QLED display utilizes a Mini LED backlight for unmatched brightness, contrast, and detail. Object Tracking Sound Pro delivers the most immersive audio experience to date, while the powerful Neo Quantum Processor provides advanced upscaling and AI capabilities for exceptional picture quality."
+        },
+        {
+            "id": 17,
+            "name": "TCL SMART TV",
+            "price": "78,799",
+            "image": "image/17.png",
+            "discount": 65,
+            "description": "The tcl Series represents the pinnacle of Samsung's QLED technology. The Neo QLED display utilizes a Mini LED backlight for unmatched brightness, contrast, and detail. Object Tracking Sound Pro delivers the most immersive audio experience to date, while the powerful Neo Quantum Processor provides advanced upscaling and AI capabilities for exceptional picture quality."
+        },
+        {
+            "id": 18,
+            "name": "Canon EOS 90D (DSLR)",
+            "price": "1,72,999",
+            "image": "image/18.png",
+            "discount": 75,
+            "description": "The Canon EOS 90D is a powerful and versatile DSLR camera ideal for enthusiast photographers. It boasts a 32.5 megapixel APS-C CMOS sensor for high-resolution images, a DIGIC 8 image processor for fast performance and low-noise shooting, and a 45-point all-cross-type autofocus system for quick and accurate focus tracking. The EOS 90D also features a 100% viewfinder for a classic shooting experience, a vari-angle touchscreen LCD for creative composition, and 10fps continuous shooting for capturing fast-action moments. It can shoot stunning 4K UHD videos at up to 30fps." 
+        },
+        {
+            "id": 19,
+            "name": "NIKON",
+            "price": "1,49,999",
+            "image": "image/19.png",
+            "discount": 20,
+            "description": "The Nikon [Model Name] is a [type of camera] camera designed for [target audience]. It boasts a [megapixel count]MP [sensor size] sensor for high-resolution images, a [processor name] image processor for [performance details], and a [autofocus system details] autofocus system for [focusing details].  [Additional key feature or two]."
+        },
+        {
+            "id": 20,
+            "name": "NIKON CAM ALONG WITH LENSE",
+            "price": "2,39,999",
+            "image": "image/20.png",
+            "discount": 15,
+            "description": "The Nikon [Model Name] is a [type of camera] camera designed for [target audience]. It boasts a [megapixel count]MP [sensor size] sensor for high-resolution images, a [processor name] image processor for [performance details], and a [autofocus system details] autofocus system for [focusing details].  [Additional key feature or two]."
+        },
+        {
+            "id": 21,
+            "name": "MACBOOK AIR",
+            "price": "99,900",
+            "image": "image/21.png",
+            "discount": 23,
+            "description": "The new MacBook Air with the M2 chip delivers powerful performance in a thin and light design. Featuring a stunning Liquid Retina display, long battery life, and a variety of color options, it's the perfect choice for work, creativity, and entertainment on the go."
+        },
+        {
+            "id": 22,
+            "name": "Dell G15 5520 Gaming Laptop",
+            "price": "1,30,990",
+            "image": "image/22.png",
+            "discount": 75,
+            "description": "The Dell G15 5520 is a powerful and affordable gaming laptop featuring a 12th Gen Intel Core i7 processor, NVIDIA GeForce RTX 30 Series Laptop GPU, and a 15.6-inch FHD display with a 120Hz refresh rate."
+        },
+        {
+            "id": 23,
+            "name": "Xiaomi SMART TV",
+            "price": "13,999",
+            "image": "image/14.png",
+            "discount": 12,
+            "description": "The Xiaomi Mi TV is a [Series (e.g., budget-friendly, high-end)] smart TV featuring a [Screen size] inch [Resolution (e.g., FHD, UHD)] display and [mention key features like HDR, refresh rate, etc.]. With Android TV, it provides access to various streaming apps and Google Assistant for voice control."
+        },
+        {
+            "id": 24,
+            "name": "Acer I Series [64] inch Smart TV (HD)",
+            "price": "87,499",
+            "image": "image/15.png",
+            "discount": 20,
+            "description": "The Acer I Series [Screen size] inch is an affordable smart TV featuring a high-definition display and a user-friendly Google TV interface. Enjoy popular streaming services, voice control with Google Assistant, and a great value for everyday entertainment."
+        }
+    ]
+    
